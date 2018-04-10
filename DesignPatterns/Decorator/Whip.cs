@@ -1,0 +1,17 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace DesignPatterns.Decorator
+{
+    class Whip : CondimentDecorator
+    {
+        public Whip(Beverage beverage) : base(beverage)
+        {
+            price = .10;
+            description = "Whip";
+        }
+    }
+}
